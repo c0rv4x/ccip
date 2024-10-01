@@ -18,7 +18,7 @@ type ExternalInitiatorRequest struct {
 	URL  *models.WebURL `json:"url,omitempty"`
 }
 
-
+//
 // ExternalInitiator represents a user that can initiate runs remotely
 type ExternalInitiator struct {
 	ID             int64
