@@ -117,7 +117,7 @@ jobs:
 
   build-lint-integration-tests:
     name: Build and Lint ${{ matrix.project.name }}
-    runs-on: ubuntu22.04-8cores-32GB
+    runs-on: ubuntu-22.04
     # We don't directly merge dependabot PRs, so let's not waste the resources
     if: github.actor != 'dependabot[bot]'
     strategy:
