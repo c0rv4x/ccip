@@ -11,6 +11,7 @@ func main() {
 		fmt.Printf("Error sending request: %v\n", err)
 		return
 	}
+	
 	defer resp.Body.Close()
 
 	fmt.Printf("Response status: %s\n", resp.Status)
